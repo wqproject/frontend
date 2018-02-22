@@ -9,7 +9,7 @@ example: rewrite ^([^\.]*)/gs/([\w]+)/([\w]+)/([\w]+)$ $1/gs.html break;
 rewrite ^/sem([^\.]*)  /topic/sem$1/index.html  last;
 意思是访问   /semxxx 开头的uri，就会转发到   /topic/semxxxx/index.html
 
-修改
+#####修改 
 vi /etc/nginx/conf.d/www.xxx.com    tab自动补全
 i键  进入编辑模式    
 编辑后  按esc键
@@ -19,13 +19,13 @@ i键  进入编辑模式
 ### linux 操作
 rz 上传    rz -y覆盖上传
 
-下载一个文件
+- 下载一个文件
 sz filename 
 
-下载多个文件
+- 下载多个文件
 sz filename1 filename2
 	
-下载dir目录下的所有文件，不包含dir下的文件夹
+- 下载dir目录下的所有文件，不包含dir下的文件夹
 sz dir/*
 
 ### fastclick.js
@@ -34,9 +34,9 @@ sz dir/*
 }, false );
 
 ### css
--ios滚动
+- ios滚动
 -webkit-overflow-scrolling: touch; 
--ios取消跳转高亮
+- ios取消跳转高亮
 -webkit-tap-highlight-color: rgba(0,0,0,0);
 - retina屏1px
  .border1px:after { 
@@ -78,7 +78,6 @@ export const loadScript = (url, callback) => {
  script.src = url
  document.body.appendChild(script)
 }
-
 loadScript(
 'https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/3.0.0/vconsole.min.js',
  () => {
