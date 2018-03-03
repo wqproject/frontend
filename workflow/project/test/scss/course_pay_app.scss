@@ -1,0 +1,73 @@
+.mode-of-payment{
+  -webkit-tap-highlight-color: transparent;
+  .title{
+    font-size: 11px;
+    color: #999;
+    padding: 12px 0 5px 12px;
+  }
+  .select-list{
+
+  }
+  .mode-item{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background: #fff;
+    &.selected{
+      .choose-icon{
+        background: url("//m.huainanhai.com/pay/images/circle_select.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .left-icon{
+      margin-left: 30px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      &.wxpay{
+        background: url("//m.huainanhai.com/pay/images/wxpay-icon.png") no-repeat;
+        background-size: 100% 100%;
+      }
+      &.alipay{
+        background: url("//m.huainanhai.com/pay/images/alipay-icon.png") no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .right-box{
+      flex: 1;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: space-between;
+      margin-left: 25px;
+      padding-right: 30px;
+      border-bottom: 1px solid #f1f1f1;
+      font-size: 14px;
+      color: #333;
+    }
+    .choose-icon{
+      width: 20px;
+      height: 20px;
+      background: url("//m.huainanhai.com/pay/images/circle_unselect.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}
+.to-pay{
+  width: 90%;
+  margin: 40px auto 30px auto;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  background: #ff8420;
+  .o_price_info {
+    padding: 10px 0;
+  }
+  .cut_price_info {
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: #efefef;
+  }
+}
+

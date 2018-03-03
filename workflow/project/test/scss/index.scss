@@ -1,0 +1,54 @@
+@import "../../../lib/scss/base";
+
+.weixin{
+  padding-bottom: 2.5rem;
+}
+.fixed-add-weixin{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left:0;
+  background: #fff;
+  z-index: 10;
+  font-size: .54rem;
+  display: flex;
+  align-items: center;
+  color: #000;
+  padding: .6rem .6rem;
+  box-shadow: 0 -2px 0 0 rgba(#f1f1f1,.3);
+  .weixin-icon{
+    width: 2.4rem;
+    height: 2.4rem;
+    background: url(//valar.huainanhai.com/h5/common/icon-weixin.jpeg) no-repeat;
+    background-size: 100% 100%;
+    margin-right: .4rem;
+  }
+  .title{
+    font-size: .8rem;
+    font-weight: bold;
+  }
+  .tips{
+    color: #999;
+    font-size: .55rem;
+    margin-top: .2rem;
+    .weixin-id{
+      color: #ff0000;
+      font-size: .7rem;
+    }
+  }
+  .open-weixin{
+    position: absolute;
+    padding: .4rem .8rem;
+    right: .6rem;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: .6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #23c91f;
+    border:1px solid #23c91f;
+    //&:after{
+    //  @include one-px-border(#23c91f)
+    //}
+  }
+}
