@@ -11,7 +11,7 @@ rewrite ^/sem([^\.]*)  /topic/sem$1/index.html  last;
 ```
 意思是访问   /semxxx 开头的uri，就会转发到   /topic/semxxxx/index.html
 
-#####修改 
+#####修改
 vi /etc/nginx/conf.d/www.xxx.com    tab自动补全
 i键  进入编辑模式    
 编辑后  按esc键
@@ -22,11 +22,11 @@ i键  进入编辑模式
 rz 上传    rz -y覆盖上传
 
 - 下载一个文件
-sz filename 
+sz filename
 
 - 下载多个文件
 sz filename1 filename2
-	
+
 - 下载dir目录下的所有文件，不包含dir下的文件夹
 sz dir/*
 
@@ -40,7 +40,7 @@ sz dir/*
 ### css
 - ios滚动
 ```
--webkit-overflow-scrolling: touch; 
+-webkit-overflow-scrolling: touch;
 ```
 - ios取消跳转高亮
 ```
@@ -48,7 +48,7 @@ sz dir/*
 ```
 - retina屏1px
 ```
- .border1px:after { 
+ .border1px:after {
     content: " ";
     position: absolute;
     top: 0;
@@ -98,4 +98,9 @@ loadScript(
 // eslint-disable-next-line
 new VConsole()
  })
+```
+
+判断linux系统
+```
+require('os').platform().toLowerCase().indexOf('linux')>-1
 ```
